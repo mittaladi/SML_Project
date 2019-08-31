@@ -1,0 +1,105 @@
+without preprocessing-----
+
+only PCA-------------).90 (104)
+Gaussian NaiveBayes = 32 %
+Logistic Regression = 36.5%
+PCA---------------).99(883)
+Gaussian NaiveBayes = 17.5 %
+
+
+Only LDA-----------------)
+Gaussian = 34.60%
+Logistic = 34.77%
+
+
+
+
+
+
+
+
+
+
+With Hog as features(1152 features)--------------------------
+
+Gaussian naiveBayes = 32.05 %
+Logistic regression = 42.11 %
+SVM = 43.77 %
+Random forest = 49 % (Time bahut zyada)
+
+Done PCA Red - (0.99) (282 features)- 
+Gausian naiveBayes - 32.66 %
+Logistic Regression - 42.07 %
+SVM = 42.32 %
+Done PCA red - (0.95) (208 features)
+Gaussian naiveBayes - 38.10 %
+Logistic Regression = 42.57 %
+SVM = 42.57 %
+Done PCA red - (0.90) (165 features)
+Gaussian NaiveBayes = 39.48 %
+Logistic Regression = 41.7%
+SVM = 42.54 %
+Done PCA red - (0.85) (136 features)
+Gaussian NaiveBayes = 40.0 %
+Logistic Regression = 41.5 %
+SVM = 42.04 %
+Done PCA red  - (0.80) (114 features)
+Gaussian NaiveBayes = 40.4 %
+Done PCA Red - (0.70) (79 features)
+Gaussian NaiveBayes = 40.5 %
+Logistic Reg = 40.44 %
+Done PCA Red - (0.60) (53 features)
+Gaussian NaiveBayes = 40.0 %
+
+Done LDA
+Naive Bayes = 42.99%
+Logistic Regression = 43.56%
+SVM = 43.57 %
+Decision Tree = 
+
+-----------------------------------------------------------------------
+
+LBP Based features(2304)
+GaussianNaive Bayes = 28.15%
+
+LBP+PCA(0.90) (1175)
+GaussianNaive Bayes = 29.28%
+
+LBP+PCA(0.80) (712)
+GaussianNaive Bayes = 30.98%
+
+
+LBP+PCA(0.70)(454)
+GaussianNaive Bayes = 32.51%
+
+LBP+PCA(0.60)(293)
+GaussianNaive Bayes = 34.07%
+LogisticRegression = 35.05
+SVM = 23.29%
+
+LBP+PCA(0.50)(185)
+GaussianNaiveBayes = 34.29%
+------------------------------------------------------------------------
+HOG+PCA(0.85)+LBP+PCA(0.50)(321features)
+GAussianNaiveBayes = 41.18%
+Logistic Regression = 44.23%
+svm=23%
+
+
+
+
+
+
+
+
+
+
+About Dataset----------------------------------------------------
+The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image. The task is to categorize each face based on the emotion shown in the facial expression in to one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral).
+
+train.csv contains two columns, "emotion" and "pixels". The "emotion" column contains a numeric code ranging from 0 to 6, inclusive, for the emotion that is present in the image. The "pixels" column contains a string surrounded in quotes for each image. The contents of this string a space-separated pixel values in row major order. test.csv contains only the "pixels" column and your task is to predict the emotion column.
+
+The training set consists of 28,709 examples. The public test set used for the leaderboard consists of 3,589 examples. The final test set, which was used to determine the winner of the competition, consists of another 3,589 examples.
+
+This dataset was prepared by Pierre-Luc Carrier and Aaron Courville, as part of an ongoing research project. They have graciously provided the workshop organizers with a preliminary version of their dataset to use for this contest.
+

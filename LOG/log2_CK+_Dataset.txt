@@ -1,0 +1,72 @@
+CK+ database---------
+
+
+NOT EXTRACTION OF FACIAL LANDMARKS-----------------------------
+By only pixels-----------------------------------------------------------------
+Naive bayes = 40.8%
+
+By Hog features-----------(1152 features)
+
+Naive Bayes = 53.57%
+Randomforest = 72.6%
+Logistic Regression = 75.39%
+SVM  = 76.98%
+
+By Hog features + PCA(0.99)(173 features)
+Naive Bayes = 64.28%
+Randomforest = 61.50%
+Logistic Regression = 74.60%
+SVM = 78.17%
+
+By Hog features + PCA(0.95)(83 features)
+Naive Bayes = 71.03%
+Randomforest = 64.28%
+Logistic Regression = 73.01%
+SVM = 75.79%
+
+By Hog features + PCA(0.90)(52 features)
+Naive Bayes = 67.46%
+Randomforest = 66.66%
+Logistic Regression = 73.41%
+SVM = 74.60%
+
+Hog + LDA - 
+Naive Bayes = 51.58%
+Logistic Regression = 53.96%
+SVM = 43.65%
+-----------------------------------------------------------------------------
+
+EXTRACTION OF Face Regions Not  FACIAL LANDMARKS---------------------
+Face extraction using Haar based features + resize each image to (200,200) dim 
+
+Apply Hog-----(1152 features)
+Naive Bayes = 76.98%
+Randomforest = 83.73%
+Logistic Regression = 90.47%
+SVM = 88.09%
+
+Apply Hog + PCA(0.99)----(176 features)
+Naive Bayes = 79.04 %
+Randomforest = 84.61%
+Logistic Regression = 88.59%
+SVM = 87.79%
+
+Apply Hog + PCA(0.95)----(97 features)
+Naive Bayes = 82.14%
+Randomforest = 81.34%
+Logistic Regression = 90.47%
+SVM = 86.90%
+
+Apply Hog + PCA(0.90)----(64 features)
+Naive Bayes = 82.14%
+Randomforest = 84.61%
+Logistic Regression = 86.90%
+SVM = 86.90%
+
+Apply Hog + PCA(0.85)----(46 features)
+Naive Bayes = 81.34%
+Randomforest = 82.53%
+Logistic Regression = 84.52%
+SVM = 82.53%
+----------------------------------------------------------------------------------------
+
